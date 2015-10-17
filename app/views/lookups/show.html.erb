@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Token:</strong>
+  <%= @lookup.token %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @lookup.url %>
+</p>
+
+<%= link_to 'Edit', edit_lookup_path(@lookup) %> |
+<%= link_to 'Back', lookups_path %>

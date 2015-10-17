@@ -1,0 +1,27 @@
+<h1>Listing lookups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Token</th>
+      <th>Url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lookups.each do |lookup| %>
+      <tr>
+        <td><%= lookup.token %></td>
+        <td><%= lookup.url %></td>
+        <td><%= link_to 'Show', lookup %></td>
+        <td><%= link_to 'Edit', edit_lookup_path(lookup) %></td>
+        <td><%= link_to 'Destroy', lookup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lookup', new_lookup_path %>

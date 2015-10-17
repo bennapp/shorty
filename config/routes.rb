@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get '*path', to: 'key#lookup'
+  resources :lookups
+  get '*path', to: 'lookups#lookup'
 end
