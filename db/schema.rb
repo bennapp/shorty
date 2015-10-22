@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151017024935) do
+ActiveRecord::Schema.define(version: 20151017194638) do
 
   create_table "lookups", force: true do |t|
     t.string   "token"
@@ -19,5 +19,7 @@ ActiveRecord::Schema.define(version: 20151017024935) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "lookups", ["token"], name: "index_lookups_on_token"
 
 end
