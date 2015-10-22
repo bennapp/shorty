@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+.flex-body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+}

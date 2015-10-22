@@ -1,5 +1,24 @@
-<h1>New lookup</h1>
+<% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, class: "alert alert-info" %>
+<% end %>
+
+<h2>Paste a link!</h2>
 
 <%= render 'form' %>
 
-<%= link_to 'Back', lookups_path %>
+<script>
+  // TODO: fix back button on isCustom thing!
+$(document).ready(function() {
+    var $tokenField = $('.token-field')
+    var $mode = $('#mode')
+
+    if($mode.find('option:selected').text() == "Custom"){
+        $tokenField.removeClass('display-none');
+    }
+
+    $mode.change(function(){
+        var isCustom = $(this).find('option:selected').text() == "Custom";
+        $tokenField.toggleClass('display-none', !isCustom);
+    });
+});
+</script>

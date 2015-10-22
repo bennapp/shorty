@@ -1,4 +1,4 @@
-<%= form_for(@lookup) do |f| %>
+<%= form_tag('lookups', method: 'post') do %>
   <% if @lookup.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@lookup.errors.count, "error") %> prohibited this lookup from being saved:</h2>
@@ -12,14 +12,17 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :token %><br>
-    <%= f.text_field :token %>
+    <%= text_field_tag :url, nil, placeholder: 'Paste link here!' %>
   </div>
-  <div class="field">
-    <%= f.label :url %><br>
-    <%= f.text_field :url %>
+
+  <div class="field display-none token-field">
+    <%= label_tag "#{request.host_with_port}/" %>
+    <%= text_field_tag :token %>
   </div>
+
+    <% select_options = [['Shorten', :shorten], ['Shortify', :shortify], ['Custom', :custom]] %>
+    <%= select_tag(:mode, options_for_select(select_options)) %>
   <div class="actions">
-    <%= f.submit %>
+    <%= submit_tag 'Hit it!' %>
   </div>
 <% end %>
