@@ -1,18 +1,16 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  Shorty, I got yo link right here!
+<div>
+  I got yo link right here!
   <span id="copy-link">
     <% lookup_href = "#{request.host_with_port}/#{@lookup.token}" %>
     <%= link_to(lookup_href, lookup_href, id: 'lookup-link') %>
   </span>
   <button data-clipboard-target='lookup-link' id='copy-button'>Click to copy link</button>
-</p>
+</div>
 
-<p>
-  <strong>Url:</strong>
+<div>
+  <strong>Links to:</strong>
   <%= link_to(@lookup.url, @lookup.url) %>
-</p>
+</div>
 
 <%= link_to 'Make another?', root_path %>
 

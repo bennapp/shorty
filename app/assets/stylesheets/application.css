@@ -15,9 +15,12 @@
  */
 
 .flex-body{
-    text-align: center;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 400px;
+}
+
+h1 {
+    align-start: flex-start;
 }
