@@ -1,28 +1,8 @@
-== README
+== Shorty
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Shorty is a little link shortner that can shorten, customize and randomly generate fun redirect links.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+{rdoc-image:http://i.imgur.com/VDYetr7.png}[http://i.imgur.com/VDYetr7.png]
+{rdoc-image:http://i.imgur.com/Blav6kD.png}[http://i.imgur.com/Blav6kD.png]
+{rdoc-image:http://i.imgur.com/oOOxvJE}[http://i.imgur.com/oOOxvJE]
+{rdoc-image:http://i.imgur.com/Sr5tx8k}[http://i.imgur.com/Sr5tx8k]
