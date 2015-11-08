@@ -4,5 +4,5 @@ Shorty is a little link shortner that can shorten, customize and randomly genera
 
 {rdoc-image:http://i.imgur.com/VDYetr7.png}[http://i.imgur.com/VDYetr7.png]
 {rdoc-image:http://i.imgur.com/Blav6kD.png}[http://i.imgur.com/Blav6kD.png]
-{rdoc-image:http://i.imgur.com/oOOxvJE}[http://i.imgur.com/oOOxvJE]
-{rdoc-image:http://i.imgur.com/Sr5tx8k}[http://i.imgur.com/Sr5tx8k]
+{rdoc-image:http://i.imgur.com/oOOxvJE.png}[http://i.imgur.com/oOOxvJE.png]
+{rdoc-image:http://i.imgur.com/Sr5tx8k.png}[http://i.imgur.com/Sr5tx8k.png]
